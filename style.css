@@ -1,0 +1,195 @@
+html, body {
+    height: 100%;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer-art-container {
+    border: 1rem solid black;
+    width: 35vh;
+    height: 35vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-art-container {
+    background-color: black;
+    border: 1rem solid black;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template:  50% 50% / 50% 50%;
+    height: 30vh;
+    margin: 0;
+    width: 30vh;
+}
+
+.box {
+    background: white;
+    height: 14vh;
+    margin: 0;
+    top: 0%;
+    width: 14vh;
+}
+
+/* TOP-LEFT-BOX */
+
+.top-left {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.top-left-art {
+    background-color: black;
+    height: 100%;
+    width: 1rem;
+}
+
+/* TOP-RIGHT-BOX */
+
+.top-right {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top-right-art {
+    background-color: black;
+    height: 1rem;
+    width: 100%;
+}
+
+/* BOTTOM-LEFT-BOX */
+
+.bottom-left {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left-art {
+    background-color:black;
+    position: relative;
+    transform: rotate(45deg);
+    width: 1rem;
+}
+
+.bottom-left-art-1, .bottom-left-art-5{
+    height: 50%;
+}
+
+.bottom-left-art-2, .bottom-left-art-4 {
+    height: 105%;
+}
+
+.bottom-left-art-1 {
+    left: 5%;
+    top: -15%;
+}
+
+.bottom-left-art-2 {
+    left: 2%;
+    bottom: 22%;
+}
+
+.bottom-left-art-3 {
+    height: 150%;
+    left: -1%;
+    top: -25%;  
+}
+
+.bottom-left-art-4 {
+    right: 3%;
+    top: 18%;
+}
+
+.bottom-left-art-5 {
+    right: 5%;
+    top: 65%;
+}
+
+/* BOTTOM-RIGHT-BOX */
+
+.bottom-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-right-art {
+    transform: rotate(135deg);
+    position: relative;
+    background-color:black;
+    width: 1rem;
+}
+
+.bottom-right-art-1, .bottom-right-art-5{
+    height: 50%;
+}
+
+.bottom-right-art-2, .bottom-right-art-4 {
+    height: 105%;
+}
+
+.bottom-right-art-1 {
+    left: 5%;
+    top: 65%; 
+}
+
+.bottom-right-art-2 {
+    top: 18%;
+    left: 3%;
+}
+
+.bottom-right-art-3 {
+    bottom: 25%;
+    height: 150%;
+    right: -1%; 
+}
+
+.bottom-right-art-4 {
+    bottom: 22%;
+    right: 2%;
+}
+
+.bottom-right-art-5 {
+    bottom: 15%;
+    right: 5%;
+}
+
+/* TEXT/LINK */
+.text {
+    color: gray;
+    display: block;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.5vh;
+    letter-spacing: 0.05rem;
+    margin: 1rem;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+.header {
+    font-size: 1vh;
+    justify-content: center;
+    position: fixed;
+    text-transform: uppercase;
+    text-align: center;
+    top: 0%;
+}
+
+.footer {
+    bottom: 0%;
+    font-size: 1vh;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+}
